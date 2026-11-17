@@ -1,0 +1,23 @@
+
+class Solution {
+public:
+    int numberOfSteps(int input){
+        int count=0; 
+    while(input>0){
+    if(input%2==0){
+        input=input/2;
+        cout<<"even number " <<input <<endl;   
+    }
+    else
+    {
+        input=input-1;
+        cout<<"odd number " <<input <<endl;
+    }
+    count++;
+    }
+    return count;
+    }
+    
+    
+};
+
